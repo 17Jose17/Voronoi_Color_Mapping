@@ -153,6 +153,16 @@ for i, coord in enumerate(transformed_sublists):
     color = colormap(ingreso)
     folium.Polygon(locations=coord, color=color, fill=True, fill_color=color, fill_opacity=0.2).add_to(m)
 
+for i, row in df.iterrows():
+    coords = row['coordenadas']
+    inverted_coords = [(lon, lat) for lat, lon in coords[0]]
+    folium.PolyLine(
+        locations=inverted_coords,
+        color="blue",
+        weight=2,
+        dash_array="5, 5",
+    ).add_to(m)
+
 colormap.add_to(m)
 
 m
