@@ -29,7 +29,7 @@ The Voronoi regions are colored based on the income data of the branches within 
 ### 5. Visualization:
 The resulting regions and markers are visualized on an interactive map using the **Folium** library, allowing for zooming and panning to explore the geographic distribution of income.
 
-https://e865d56c-9374-492b-bd7b-c5b7d39e9675-00-prwbkdkcgdw3.janeway.replit.dev/
+https://voronoimap.github.io/
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
